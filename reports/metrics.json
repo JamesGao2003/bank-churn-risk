@@ -1,0 +1,172 @@
+{
+  "best_model": "xgboost",
+  "cv": {
+    "logistic_regression": {
+      "roc_auc_mean": 0.7657,
+      "roc_auc_std": 0.0213,
+      "pr_auc_mean": 0.4586,
+      "pr_auc_std": 0.0304,
+      "precision_mean": 0.3795,
+      "precision_std": 0.0171,
+      "recall_mean": 0.6816,
+      "recall_std": 0.0384,
+      "f1_mean": 0.4874,
+      "f1_std": 0.0223
+    },
+    "random_forest": {
+      "roc_auc_mean": 0.8588,
+      "roc_auc_std": 0.0105,
+      "pr_auc_mean": 0.6758,
+      "pr_auc_std": 0.0207,
+      "precision_mean": 0.6158,
+      "precision_std": 0.0134,
+      "recall_mean": 0.6196,
+      "recall_std": 0.03,
+      "f1_mean": 0.6175,
+      "f1_std": 0.0188
+    },
+    "xgboost": {
+      "roc_auc_mean": 0.8648,
+      "roc_auc_std": 0.0098,
+      "pr_auc_mean": 0.7017,
+      "pr_auc_std": 0.0211,
+      "precision_mean": 0.5234,
+      "precision_std": 0.0077,
+      "recall_mean": 0.7307,
+      "recall_std": 0.0389,
+      "f1_mean": 0.6094,
+      "f1_std": 0.0152
+    }
+  },
+  "holdout": {
+    "logistic_regression": {
+      "roc_auc": 0.7764,
+      "pr_auc": 0.4669,
+      "precision": 0.386,
+      "recall": 0.7027,
+      "f1": 0.4983,
+      "brier": 0.1942,
+      "threshold": 0.5
+    },
+    "random_forest": {
+      "roc_auc": 0.8618,
+      "pr_auc": 0.7019,
+      "precision": 0.6299,
+      "recall": 0.6314,
+      "f1": 0.6307,
+      "brier": 0.1176,
+      "threshold": 0.5
+    },
+    "xgboost": {
+      "roc_auc": 0.8684,
+      "pr_auc": 0.7189,
+      "precision": 0.5159,
+      "recall": 0.7592,
+      "f1": 0.6143,
+      "brier": 0.1363,
+      "threshold": 0.5
+    }
+  },
+  "best_uncalibrated": {
+    "roc_auc": 0.8683614276834616,
+    "pr_auc": 0.7189027050694468,
+    "precision": 0.5158597662771286,
+    "recall": 0.7592137592137592,
+    "f1": 0.614314115308151,
+    "brier": 0.1363057643175125,
+    "threshold": 0.5
+  },
+  "best_calibrated": {
+    "roc_auc": 0.868175571565402,
+    "pr_auc": 0.7195963966291937,
+    "precision": 0.8008130081300813,
+    "recall": 0.48402948402948404,
+    "f1": 0.6033690658499234,
+    "brier": 0.09898738621370201,
+    "threshold": 0.5
+  },
+  "tiers": [
+    {
+      "tier": "Low",
+      "customers": 1341,
+      "churners": 89,
+      "churn_rate": 0.0664,
+      "share_of_customers": 0.6705,
+      "share_of_churners": 0.2187,
+      "lift_vs_base": 0.3261
+    },
+    {
+      "tier": "Medium",
+      "customers": 406,
+      "churners": 119,
+      "churn_rate": 0.2931,
+      "share_of_customers": 0.203,
+      "share_of_churners": 0.2924,
+      "lift_vs_base": 1.4403
+    },
+    {
+      "tier": "High",
+      "customers": 253,
+      "churners": 199,
+      "churn_rate": 0.7866,
+      "share_of_customers": 0.1265,
+      "share_of_churners": 0.4889,
+      "lift_vs_base": 3.8652
+    }
+  ],
+  "economics": [
+    {
+      "tier": "Low",
+      "customers": 1341,
+      "churners": 89,
+      "churn_rate": 0.07,
+      "share_of_customers": 0.67,
+      "share_of_churners": 0.22,
+      "lift_vs_base": 0.33,
+      "offer_cost": 67050.0,
+      "expected_saved_value": 13350.0,
+      "net_benefit": -53700.0,
+      "roi": -0.8
+    },
+    {
+      "tier": "Medium",
+      "customers": 406,
+      "churners": 119,
+      "churn_rate": 0.29,
+      "share_of_customers": 0.2,
+      "share_of_churners": 0.29,
+      "lift_vs_base": 1.44,
+      "offer_cost": 20300.0,
+      "expected_saved_value": 17850.0,
+      "net_benefit": -2450.0,
+      "roi": -0.12
+    },
+    {
+      "tier": "High",
+      "customers": 253,
+      "churners": 199,
+      "churn_rate": 0.79,
+      "share_of_customers": 0.13,
+      "share_of_churners": 0.49,
+      "lift_vs_base": 3.87,
+      "offer_cost": 12650.0,
+      "expected_saved_value": 29850.0,
+      "net_benefit": 17200.0,
+      "roi": 1.36
+    }
+  ],
+  "best_cutoff": {
+    "cutoff": 40.0,
+    "targeted": 317.0,
+    "churners_targeted": 230.0,
+    "recall": 0.5651105651105651,
+    "net_benefit": 18650.0
+  },
+  "assumptions": {
+    "offer_cost": 50.0,
+    "retained_value": 500.0,
+    "offer_success_rate": 0.3
+  },
+  "n_train": 8000,
+  "n_test": 2000
+}

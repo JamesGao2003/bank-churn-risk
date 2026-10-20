@@ -1,0 +1,15 @@
+pandas>=2.2,<3
+numpy>=1.26
+scikit-learn>=1.5
+xgboost>=2.1
+lifelines>=0.29
+duckdb>=1.0
+plotly>=5.22
+matplotlib>=3.8
+jupyter
+nbformat
+nbconvert
+ipykernel
+pytest
+pyarrow>=15
+kaleido>=1.0

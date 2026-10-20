@@ -1,0 +1,12 @@
+covariate,hazard_ratio,hr_lower95,hr_upper95,p_value,significant_5pct
+Products_3plus,2.5631,2.2514,2.918,0.0,True
+Geography_Germany,1.7127,1.5461,1.8973,0.0,True
+Geography_Spain,1.0714,0.9557,1.2011,0.2367,False
+Age,1.0397,1.036,1.0434,0.0,True
+EstimatedSalary_k,1.0001,0.9993,1.0008,0.8438,False
+Balance_k,0.9996,0.9988,1.0005,0.3808,False
+CreditScore,0.9995,0.9991,1.0,0.0328,True
+HasCrCard,0.934,0.8513,1.0247,0.1485,False
+Gender_Male,0.7152,0.6565,0.7792,0.0,True
+IsActiveMember,0.5416,0.4953,0.5922,0.0,True
+Products_2,0.326,0.2908,0.3654,0.0,True

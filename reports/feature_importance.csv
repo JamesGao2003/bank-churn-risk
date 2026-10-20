@@ -1,0 +1,15 @@
+feature,importance
+NumOfProducts,0.2114
+Age,0.1466
+ZeroBalance,0.1366
+IsActiveMember,0.12
+Geography_Germany,0.0868
+Gender_Male,0.0551
+BalanceSalaryRatio,0.0434
+Balance,0.0416
+Geography_Spain,0.0335
+CreditScore,0.0271
+ProductsPerTenureYear,0.026
+EstimatedSalary,0.0256
+Tenure,0.025
+HasCrCard,0.0214

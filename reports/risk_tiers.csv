@@ -1,0 +1,4 @@
+tier,customers,churners,churn_rate,share_of_customers,share_of_churners,lift_vs_base
+Low,1341,89,0.0664,0.6705,0.2187,0.3261
+Medium,406,119,0.2931,0.203,0.2924,1.4403
+High,253,199,0.7866,0.1265,0.4889,3.8652
